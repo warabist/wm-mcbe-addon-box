@@ -53,7 +53,7 @@ hamburger.addEventListener("click", (e) => { //ハンバーガーボタンが選
         flg = true;
     }
 });
-window.addEventListener("keydown", () => { //escキー押下でメニューを閉じられるように
+window.addEventListener("keydown", () => {　//escキー押下でメニューを閉じられるように
     if (event.key === "Escape") {
         hamburger.classList.remove(CLASS);
         menu.classList.remove(CLASS);
