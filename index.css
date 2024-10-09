@@ -1,10 +1,3 @@
-header {
-    display: flex;
-    width: 100%;
-    height: 60px;
-    align-items: center;
-}
-
 body {
     background-color: rgb(72, 72, 72);
 }
@@ -20,11 +13,11 @@ a {
 
 .hamburger {
     display: block;
-    height: 60px;
+    height: 80px;
     margin-left: auto;
     position: relative;
     z-index: 10;
-    width: 60px;
+    width: 80px;
     border: none;
     background-color: transparent;
 }
@@ -49,13 +42,13 @@ a {
 
 .hamburger__line {
     display: block;
-    height: 2px;
+    height: 10px;
     position: absolute;
-    top: 23px;
+    top: 30x;
     left: 50%;
     transform: translateX(-50%);
-    width: 24px;
-    background-color: #172e59;
+    width: 35px;
+    background-color: #e8e8e8;
     transition: 0.4s;
 }
 
@@ -66,7 +59,7 @@ a {
     height: 100%;
     position: absolute;
     width: 100%;
-    background-color: #172e59;
+    background-color: #343434;
     transition: inherit;
 }
 
@@ -136,7 +129,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #172e59;
+    color: #dbdbdb;
     font-weight: 900;
     transition: color 0.4s;
     font-size: 0.875rem;
@@ -205,5 +198,5 @@ a {
 }
 
 .accordion__link {
-    color: #172e59;
+    color: #dadada;
 }
