@@ -11,6 +11,7 @@ body {
 
 .header-title {
     color: aliceblue;
+    offset: 1000px 0px;
 }
 
 .header-img {
