@@ -3,8 +3,9 @@ body {
 }
 
 header {
-  height: 200px;
-  width: max-content;
+  margin: 0 auto;
+  height: 90px;
+  width: 100%;
   background-color: black;
 }
 
@@ -26,6 +27,7 @@ header {
 }
 
 .header-list-item {
+  list-style: none;
   position: relative;
   left: 10px;
 }
