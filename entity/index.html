@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>WM-MCBE-ADDON-BOX</title>
-  <link rel="shortcut icon" href="icon.png">
-  <link rel="stylesheet" href="style.css">
+  <title>エンティティ</title>
+  <link rel="shortcut icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
 </head>
 
@@ -13,21 +13,13 @@
   <div id="header"></div>
   <hr size="2" color="darkgray">
 
-  <div class="addon-elements-grid">
-    <!--テンプレート-->
-    <div class="addon-elements-grid-item">
-      <a href="entity/index.html" style="text-decoration: none;">
-        <h2 class="white-text">エンティティ</h2>
-        <img src="addon-element-images/entity.png">
-      </a>
-    </div>
-  </div>
+
 
   <!--ハイライトのファイルの読み込み-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
-    fetch("header.html")
+    fetch("../header.html")
       .then((response) => response.text())
       .then((data) => document.querySelector("#header").innerHTML = data);
   </script>
