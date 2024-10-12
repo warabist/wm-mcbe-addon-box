@@ -4,15 +4,18 @@
 }
 
 body {
-  background-color: rgb(72, 72, 72);
+  background-color: rgb(35, 35, 35);
 }
 
 header {
   margin: 0 auto;
-  padding: 15px 0;
-  height: 90px;
+  height: 70px;
   width: 100%;
-  background-color: black;
+  background-color: rgb(26, 26, 26);
+}
+
+a {
+  color: rgb(0, 0, 231);
 }
 
 .header-icon {
@@ -23,17 +26,18 @@ header {
 
 .header-title {
   color: aliceblue;
-  position: relative;
-  left: 10px;
+  line-height: 70px;
+  margin-left: 10px;
   float: left;
 }
 
 .header-list {
-  float: left
+  list-style: none;
+  float: left;
 }
 
 .header-list-item {
-  list-style: none;
-  position: relative;
-  left: 10px;
+  font-size: large;
+  line-height: 70px;
+  margin-left: 50px;
 }
