@@ -6,6 +6,10 @@ body {
   color: aliceblue;
 }
 
+.header-site-icon {
+  size: 50px
+}
+
 .header-link {
   position: relative;
   left: 10px;
