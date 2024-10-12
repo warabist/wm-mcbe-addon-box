@@ -3,13 +3,13 @@ body {
 }
 
 header {
-  height: 80px;
+  height: 200px;
   width: max-content;
 }
 
 .header-icon {
-  height: 70px;
-  width: 70px;
+  height: 90%;
+  width: 90%;
 }
 
 .header-title {
@@ -18,5 +18,5 @@ header {
 
 .header-link {
   position: relative;
-  left: 10px;
+  left: 20px;
 }
