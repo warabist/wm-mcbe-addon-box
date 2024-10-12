@@ -2,76 +2,26 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>WM-MCBE-ADDON-BOX</title>
-    <link rel="shortcut icon" href="icon.png">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
+  <meta charset="utf-8">
+  <title>WM-MCBE-ADDON-BOX</title>
+  <link rel="shortcut icon" href="icon.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
 </head>
 
 <body>
+  <header>
+    <script src="index.js"></script>
+    <img src="icon.png">
+    <h1 class="header-title">WM-MCBE-ADDON-BOX</h1>
+    <a href="https://discord.gg/ZyrbU3GkAW" class="header-link">Discord</a>
+  </header>
 
-    <header>
-        <script src="index.js"></script>
-        <div class="header__inner">
-            <button id="js-hamburger" type="button" class="hamburger" aria-controls="navigation" aria-expanded="false"
-                aria-label="メニューを開く">
-                <span class="hamburger__line"></span>
-                <span class="hamburger__text"></span>
-            </button>
-            <div class="header__nav-area js-nav-area" id="navigation">
-                <nav id="js-global-navigation" class="global-navigation">
-                    <ul class="global-navigation__list">
-                        <li>
-                            <a href="#" class="global-navigation__link">
-                                メニュー
-                            </a>
-                        </li>
-                        <li>
-                            <button type="button" class="global-navigation__link -accordion js-sp-accordion-trigger"
-                                aria-expanded='false' aria-controls="accordion1">
-                                親メニュー
-                            </button>
-                            <div id="accordion1" class="accordion js-accordion">
-                                <ul class="accordion__list">
-                                    <li>
-                                        <a href="#" class="accordion__link">
-                                            子メニュー
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="accordion__link">
-                                            子メニュー
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="accordion__link">
-                                            子メニュー
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="global-navigation__link">
-                                メニュー
-                            </a>
-                        </li>
-                    </ul>
-                    <div id="js-focus-trap" tabindex="0"></div>
-                </nav>
-            </div>
-        </div>
-        <h1 class="header-title">WM-MCBE-ADDON-BOX</h1>
-    </header>
-
-    <!--ハイライトのファイルの読み込み-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
-
+  <!--ハイライトのファイルの読み込み-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </body>
 
 </html>
