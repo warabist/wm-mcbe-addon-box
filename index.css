@@ -8,15 +8,21 @@ header {
 }
 
 .header-icon {
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
+  float: left;
 }
 
 .header-title {
   color: aliceblue;
+  float: left;
 }
 
-.header-link {
+.header-list {
+  float: left
+}
+
+.header-list-item {
   position: relative;
   left: 10px;
 }
