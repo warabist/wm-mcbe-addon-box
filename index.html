@@ -12,6 +12,8 @@
 <body>
   <div id="header"></div>
 
+  <p class="white-text">アドオンに関する情報を集めている場所です</p>
+
   <div class="addon-elements-grid">
     <!--テンプレート-->
     <div class="addon-elements-grid-item">
@@ -26,7 +28,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
-    fetch("https://warabist.github.io/wm-mcbe-addon-box/header.html")
+    fetch("./header.html")
       .then((response) => response.text())
       .then((data) => document.querySelector("#header").innerHTML = data);
   </script>
