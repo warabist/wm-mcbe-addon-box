@@ -178,3 +178,8 @@ code {
     color: rgb(165, 0, 191);
     font-weight: bold;
 }
+
+.property-color {
+    color: rgb(185, 151, 0);
+    font-weight: bold;
+}
