@@ -14,41 +14,112 @@
     <div id="header"></div>
 
     <div style="margin: 30px;">
-        <h2>Description</h2>
+
+        <!--Description基本説明-->
+        <h2>description</h2>
         <div class="vertical-line">
             <div class="description">
                 <p><strong>型: </strong>オブジェクト</p>
                 <p><strong>説明: </strong>アイテムのIDや種類を決めることができるプロパティ。</p>
-                <pre><code>{
+                <pre class="json"><code>{
     "format_version": "1.21.30",
     "minecraft:item": {
-      "description": ... //この位置
+      "description": {...} //この位置
     }
 }</code></pre>
             </div>
         </div>
+
+        <!--プロパティ一覧-->
         <h2 class="heading">プロパティ</h2>
         <div class="property-grid">
             <a class="property-grid-item" href="#identifier">
                 <li>identifier</li>
             </a>
-            <a class="property-grid-item" href="#menu_category">
+            <a class="property-grid-item" href="#menu-category">
                 <li>menu_category</li>
             </a>
         </div>
+
+        <!--identifierプロパティ-->
         <h3 id="identifier" class="heading">identifier</h3>
         <div class="vertical-line">
             <div class="description">
                 <p><strong>型: </strong>文字列</p>
                 <p><strong>デフォルト値: </strong>なし</p>
                 <p>
-                    <strong>説明: </strong>アイテムのIDを決められる。IDは半角英数字記号で <strong>名前空間:名前</strong>
+                    <strong>説明: </strong>アイテムのID。IDは半角英数字記号で <strong>名前空間:名前</strong>
                     という形でなければ無効となる(記号はおそらくアンダーバーのみ)。また、名前空間にminecraftを使用してはならない。
                 </p>
                 <p><strong>例: </strong></p>
-                <pre><code>"identifier": "sample:item"</code></pre>
+                <pre class="json"><code>"identifier": "sample:item"</code></pre>
             </div>
         </div>
+
+        <!--menu_categoryプロパティ-->
+        <h3 id="menu-category" class="heading">menu_category</h3>
+        <div class="vertical-line">
+            <div class="description">
+                <p><strong>型: </strong>
+                    オブジェクト
+                </p>
+                <p><strong>デフォルト値: </strong>
+                    { "category": "items" }
+                </p>
+                <p><strong>説明: </strong>
+                    アイテムの種類。
+                </p>
+                <p><strong>プロパティ: </strong></p>
+                <div class="description">
+
+                    <h4>group</h4>
+                    <div class="vertical-line">
+                        <div class="description">
+                            <p><strong>型: </strong>
+                                文字列
+                            </p>
+                            <p><strong>説明: </strong>
+                                クリエイティブスロットからの場所。剣など。入れられる文字列は、公式が配布しているアドオンファイルのlangファイルの5551行目あたりから確認できる。自分で新しく作ることはできない。
+                            </p>
+                            <p><strong>例: </strong></p>
+                            <pre><code class="json">"group": "itemGroup.name.sword"</code></pre>
+                        </div>
+                    </div>
+
+                    <h4 class="heading">category</h4>
+                    <div class="vertical-line">
+                        <div class="description">
+                            <p><strong>型: </strong>
+                                文字列
+                            </p>
+                            <p><strong>説明: </strong>
+                                アイテムのカテゴリー。所持品、アイテムなど。
+                                <strong>construction(構築) equipment(所持品) items(アイテム) nature(性質) none(なし)</strong>
+                                の5つから選択できる。noneの場合、コマンドからの入手も不可能となる。
+                            </p>
+                            <p><strong>例: </strong></p>
+                            <pre><code class="json">"category": "equipment"</code></pre>
+                        </div>
+                    </div>
+
+                    <h4 class="heading">is_hidden_in_commands</h4>
+                    <div class="vertical-line">
+                        <div class="description">
+                            <p><strong>型: </strong>
+                                真偽値
+                            </p>
+                            <p><strong>説明: </strong>
+                                アイテムがコマンドで指定できるか。trueでできない、falseでできる。
+                            </p>
+                            <p><strong>例: </strong></p>
+                            <pre><code class="json">"is_hidden_in_commands": true</code></pre>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!--ハイライトのファイルの読み込み-->
