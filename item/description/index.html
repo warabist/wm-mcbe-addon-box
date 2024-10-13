@@ -58,7 +58,9 @@
                     という形でなければ無効となる(記号はおそらくアンダーバーのみ)。また、名前空間にminecraftを使用してはならない。
                 </p>
                 <p><span class="example-color">例: </span></p>
-                <button onclick="copyButton('identifier-example')"><a>Copy</a></button>
+                <button onclick="copyButton('identifier-example', 'identifier-example-button-text')">
+                    <a id="identifier-example-button-text">Copy</a>
+                </button>
                 <pre><code id="identifier-example">"identifier": "sample:item"</code></pre>
             </div>
         </div>
@@ -90,7 +92,9 @@
                                     クリエイティブスロットからの場所。剣など。入れられる文字列は、公式が配布しているアドオンファイルのlangファイルの5551行目あたりから確認できる。自分で新しく作ることはできない。
                                 </p>
                                 <p><span class="example-color">例: </span></p>
-                                <button onclick="copyButton('group-example')"><a>Copy</a></button>
+                                <button onclick="copyButton('group-example', 'group-example-button-text')">
+                                    <a id="group-example-button-text">Copy</a>
+                                </button>
                                 <pre><code id="group-example">"group": "itemGroup.name.sword"</code></pre>
                             </div>
                         </div>
@@ -107,8 +111,10 @@
                                     の5つから選択できる。noneの場合、コマンドからの入手も不可能となる。
                                 </p>
                                 <p><span class="example-color">例: </span></p>
-                                <button onclick="copyButton('category-example')"><a>Copy</a></button>
-                                <pre><code id="category">"category": "equipment"</code></pre>
+                                <button onclick="copyButton('category-example', 'category-example-button-text')">
+                                    <a id="category-example-button-text">Copy</a>
+                                </button>
+                                <pre><code id="category-example">"category": "equipment"</code></pre>
                             </div>
                         </div>
 
@@ -122,7 +128,10 @@
                                     アイテムがコマンドで指定できるか。trueでできない、falseでできる。
                                 </p>
                                 <p><span class="example-color">例: </span></p>
-                                <button onclick="copyButton('is-hidden-in-commands-example')"><a>Copy</a></button>
+                                <button
+                                    onclick="copyButton('is-hidden-in-commands-example', 'is-hidden-in-commands-example-button-text')">
+                                    <a id="is-hidden-in-commands-example-button-text">Copy</a>
+                                </button>
                                 <pre><code id="is-hidden-in-commands-example">"is_hidden_in_commands": true</code></pre>
                             </div>
                         </div>
@@ -130,7 +139,9 @@
                     </div>
                 </details>
                 <p><span class="example-color">例: </span></p>
-                <button onclick="copyButton('menu-category-example')"><a>Copy</a></button>
+                <button onclick="copyButton('menu-category-example', 'menu-category-example-button-text')">
+                    <a id="menu-category-example-button-text">Copy</a>
+                </button>
                 <pre><code id="menu-category-example">"menu_category": {
     "group": "itemGroup.name.sword",
     "category": "equipment",
