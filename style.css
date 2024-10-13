@@ -1,111 +1,144 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-  color: white
+    color: white
 }
 
 h2 {
-  color: white
+    color: white
 }
 
 h3 {
-  color: white
+    color: white
 }
 
 h4 {
-  color: white
+    color: white
 }
 
 p {
-  color: white
+    color: white
 }
 
 .link-text {
-  color: rgb(0, 24, 235);
+    color: rgb(0, 24, 235);
 }
 
 .list-point-white {
-  color: white;
-  margin-left: 40px;
-  margin-bottom: 3px;
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 3px;
 }
 
 body {
-  background-color: rgb(35, 35, 35);
+    background-color: rgb(35, 35, 35);
 }
 
 header {
-  margin: 0 auto;
-  height: 70px;
-  width: 100%;
-  background-color: rgb(26, 26, 26);
+    margin: 0 auto;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
 }
 
 .header-icon {
-  height: 70px;
-  width: 70px;
-  float: left;
+    height: 70px;
+    width: 70px;
+    float: left;
 }
 
 .header-title {
-  color: aliceblue;
-  line-height: 70px;
-  margin-left: 10px;
-  float: left;
+    color: aliceblue;
+    line-height: 70px;
+    margin-left: 10px;
+    float: left;
 }
 
 .header-list {
-  list-style: none;
-  float: left;
+    list-style: none;
+    float: left;
 }
 
 .header-list-item {
-  font-size: large;
-  line-height: 70px;
-  margin-left: 50px;
+    font-size: large;
+    line-height: 70px;
+    margin-left: 50px;
 }
 
 .addon-elements-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-right: auto;
-  margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .addon-elements-grid-item {
-  height: 270px;
-  width: 320px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 20px;
-  border: 2px solid rgb(107, 107, 107);
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
+    height: 270px;
+    width: 320px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 2px solid rgb(107, 107, 107);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
 }
 
 .addon-elements-grid-item h2 {
-  margin-top: 10px;
-  margin-left: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
 }
 
 .addon-elements-grid-item img {
-  display: block;
-  height: 210px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 3px;
+    display: block;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
 }
 
 .menu-background {
-  height: auto;
-  width: 400px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 20px;
-  border: 2px solid rgb(107, 107, 107);
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
+    height: auto;
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 2px solid rgb(107, 107, 107);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.property-grid-item {
+    text-decoration: none;
+    color: white;
+}
+
+.property-grid-item:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.heading {
+    margin-top: 30px;
+}
+
+.vertical-line {
+    border-left: 3px solid rgb(93, 93, 93);
+}
+
+.description {
+    margin-left: 10px;
+}
+
+code {
+    font-size: large;
 }

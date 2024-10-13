@@ -2,47 +2,47 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>WM-MCBE-ADDON-BOX</title>
-  <link rel="shortcut icon" href="icon.png">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>WM-MCBE-ADDON-BOX</title>
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="header"></div>
+    <div id="header"></div>
 
-  <div class="addon-elements-grid">
-    <!--テンプレート-->
-    <div class="addon-elements-grid-item">
-      <a href="" style="text-decoration: none;">
-        <h2>アイテム(準備中...)</h2>
-        <!--画像の比率は7:5-->
-        <img src="addon-element-images/item.png">
-      </a>
+    <div class="addon-elements-grid">
+        <!--テンプレート-->
+        <div class="addon-elements-grid-item">
+            <a href="" style="text-decoration: none;">
+                <h2>アイテム(準備中...)</h2>
+                <!--画像の比率は7:5-->
+                <img src="addon-element-images/item.png">
+            </a>
+        </div>
+        <div class="addon-elements-grid-item">
+            <a href="" style="text-decoration: none;">
+                <h2>ブロック(準備中...)</h2>
+                <!--画像の比率は7:5-->
+                <img src="addon-element-images/block.png">
+            </a>
+        </div>
+        <div class="addon-elements-grid-item">
+            <a href="" style="text-decoration: none;">
+                <h2>エンティティ(準備中...)</h2>
+                <!--画像の比率は7:5-->
+                <img src="addon-element-images/entity.png">
+            </a>
+        </div>
     </div>
-    <div class="addon-elements-grid-item">
-      <a href="" style="text-decoration: none;">
-        <h2>ブロック(準備中...)</h2>
-        <!--画像の比率は7:5-->
-        <img src="addon-element-images/block.png">
-      </a>
-    </div>
-    <div class="addon-elements-grid-item">
-      <a href="" style="text-decoration: none;">
-        <h2>エンティティ(準備中...)</h2>
-        <!--画像の比率は7:5-->
-        <img src="addon-element-images/entity.png">
-      </a>
-    </div>
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-    fetch("./header.html")
-      .then((response) => response.text())
-      .then((data) => document.querySelector("#header").innerHTML = data);
-  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+        fetch("./header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+    </script>
 </body>
 
 </html>
