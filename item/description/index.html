@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <script src="../../index.js"></script>
+
     <div id="header"></div>
 
     <div style="margin: 30px;">
@@ -55,8 +57,9 @@
                     アイテムのID。IDは半角英数字記号で <strong>名前空間:名前</strong>
                     という形でなければ無効となる(記号はおそらくアンダーバーのみ)。また、名前空間にminecraftを使用してはならない。
                 </p>
-                <p><span class="example-color">例: </span>
-                <pre><code>"identifier": "sample:item"</code></pre>
+                <p><span class="example-color">例: </span></p>
+                <button onclick="copyButton('identifier-example')"><a>Copy</a></button>
+                <pre><code id="identifier-example">"identifier": "sample:item"</code></pre>
             </div>
         </div>
 
@@ -86,8 +89,9 @@
                                 <p><span class="description-color">説明: </span>
                                     クリエイティブスロットからの場所。剣など。入れられる文字列は、公式が配布しているアドオンファイルのlangファイルの5551行目あたりから確認できる。自分で新しく作ることはできない。
                                 </p>
-                                <p><span class="example-color">例: </span>
-                                <pre><code>"group": "itemGroup.name.sword"</code></pre>
+                                <p><span class="example-color">例: </span></p>
+                                <button onclick="copyButton('group-example')"><a>Copy</a></button>
+                                <pre><code id="group-example">"group": "itemGroup.name.sword"</code></pre>
                             </div>
                         </div>
 
@@ -102,8 +106,9 @@
                                     <strong>construction(構築) equipment(所持品) items(アイテム) nature(性質) none(なし)</strong>
                                     の5つから選択できる。noneの場合、コマンドからの入手も不可能となる。
                                 </p>
-                                <p><span class="example-color">例: </span>
-                                <pre><code>"category": "equipment"</code></pre>
+                                <p><span class="example-color">例: </span></p>
+                                <button onclick="copyButton('category-example')"><a>Copy</a></button>
+                                <pre><code id="category">"category": "equipment"</code></pre>
                             </div>
                         </div>
 
@@ -116,15 +121,17 @@
                                 <p><span class="description-color">説明: </span>
                                     アイテムがコマンドで指定できるか。trueでできない、falseでできる。
                                 </p>
-                                <p><span class="example-color">例: </span>
-                                <pre><code>"is_hidden_in_commands": true</code></pre>
+                                <p><span class="example-color">例: </span></p>
+                                <button onclick="copyButton('is-hidden-in-commands-example')"><a>Copy</a></button>
+                                <pre><code id="is-hidden-in-commands-example">"is_hidden_in_commands": true</code></pre>
                             </div>
                         </div>
 
                     </div>
                 </details>
                 <p><span class="example-color">例: </span></p>
-                <pre><code>"menu_category": {
+                <button onclick="copyButton('menu-category-example')"><a>Copy</a></button>
+                <pre><code id="menu-category-example">"menu_category": {
     "group": "itemGroup.name.sword",
     "category": "equipment",
     "is_hidden_in_commands": false

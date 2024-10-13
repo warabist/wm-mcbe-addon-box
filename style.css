@@ -43,6 +43,17 @@ pre code {
     font-family: sans-serif
 }
 
+button {
+    background-color: rgb(49, 49, 49);
+    height: 30px;
+    width: 50px;
+}
+
+button a {
+    color: white;
+    font-size: larger;
+}
+
 .link-text {
     color: rgb(0, 24, 235);
 }
@@ -132,6 +143,7 @@ body {
 
 .property-grid {
     display: grid;
+    width: auto;
     grid-template-columns: repeat(4, 1fr);
     margin-right: auto;
     margin-left: auto;
