@@ -160,17 +160,17 @@ code {
 }
 
 .type-color {
-    color: rgb(0, 86, 166);
+    color: rgb(0, 94, 181);
     font-weight: bold;
 }
 
 .default-value-color {
-    color: rgb(0, 155, 8);
+    color: rgb(0, 180, 9);
     font-weight: bold;
 }
 
 .description-color {
-    color: rgb(159, 66, 0);
+    color: rgb(179, 75, 0);
     font-weight: bold;
 }
 
@@ -180,6 +180,6 @@ code {
 }
 
 .property-color {
-    color: rgb(185, 151, 0);
+    color: rgb(201, 148, 0);
     font-weight: bold;
 }
