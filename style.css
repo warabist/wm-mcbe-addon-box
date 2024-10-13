@@ -3,8 +3,34 @@
   padding: 0;
 }
 
-.white-text {
+h1 {
   color: white
+}
+
+h2 {
+  color: white
+}
+
+h3 {
+  color: white
+}
+
+h4 {
+  color: white
+}
+
+p {
+  color: white
+}
+
+.link-text {
+  color: rgb(0, 24, 235);
+}
+
+.list-point-white {
+  color: white;
+  margin-left: 40px;
+  margin-bottom: 3px;
 }
 
 body {
@@ -71,4 +97,15 @@ header {
   margin-left: auto;
   margin-right: auto;
   border-radius: 3px;
+}
+
+.menu-background {
+  height: auto;
+  width: 400px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  border: 2px solid rgb(107, 107, 107);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
 }
