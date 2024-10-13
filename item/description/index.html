@@ -6,8 +6,6 @@
     <title>アイテム/Description</title>
     <link rel="shortcut icon" href="../../icon.png">
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
 </head>
 
 <body>
@@ -19,8 +17,12 @@
         <h2>description</h2>
         <div class="vertical-line">
             <div class="description">
-                <p><strong>型: </strong>オブジェクト</p>
-                <p><strong>説明: </strong>アイテムのIDや種類を決めることができるプロパティ。</p>
+                <p><span class="type-color">型: </span>
+                    オブジェクト
+                </p>
+                <p><span class="description-color">説明: </span>
+                    アイテムのIDや種類を決めることができるプロパティ。
+                </p>
                 <pre class="json"><code>{
     "format_version": "1.21.30",
     "minecraft:item": {
@@ -34,89 +36,99 @@
         <h2 class="heading">プロパティ</h2>
         <div class="property-grid">
             <a class="property-grid-item" href="#identifier">
-                <li>identifier</li>
+                <li>identifier - 識別子</li>
             </a>
             <a class="property-grid-item" href="#menu-category">
-                <li>menu_category</li>
+                <li>menu_category - メニューカテゴリ</li>
             </a>
         </div>
 
         <!--identifierプロパティ-->
-        <h3 id="identifier" class="heading">identifier</h3>
+        <h3 id="identifier" class="heading">identifier - 識別子</h3>
         <div class="vertical-line">
             <div class="description">
-                <p><strong>型: </strong>文字列</p>
-                <p><strong>デフォルト値: </strong>なし</p>
+                <p><span class="type-color">型: </span>
+                    文字列
+                </p>
                 <p>
-                    <strong>説明: </strong>アイテムのID。IDは半角英数字記号で <strong>名前空間:名前</strong>
+                    <span class="description-color">説明: </span>
+                    アイテムのID。IDは半角英数字記号で <strong>名前空間:名前</strong>
                     という形でなければ無効となる(記号はおそらくアンダーバーのみ)。また、名前空間にminecraftを使用してはならない。
                 </p>
-                <p><strong>例: </strong></p>
+                <p><span class="example-color">例: </span>
                 <pre class="json"><code>"identifier": "sample:item"</code></pre>
             </div>
         </div>
 
         <!--menu_categoryプロパティ-->
-        <h3 id="menu-category" class="heading">menu_category</h3>
+        <h3 id="menu-category" class="heading">menu_category - メニューカテゴリ</h3>
         <div class="vertical-line">
             <div class="description">
-                <p><strong>型: </strong>
+                <p><span class="type-color">型: </span>
                     オブジェクト
                 </p>
-                <p><strong>デフォルト値: </strong>
+                <p><span class="default-value-color">デフォルト値: </span>
                     { "category": "items" }
                 </p>
-                <p><strong>説明: </strong>
+                <p><span class="description-color">説明: </span>
                     アイテムの種類。
                 </p>
-                <p><strong>プロパティ: </strong></p>
-                <div class="description">
+                <p><span class="example-color">例: </span></p>
+                <pre><code>"menu_category": {
+    "group": "itemGroup.name.sword",
+    "category": "equipment",
+    "is_hidden_in_commands": false
+}</code></pre>
+                <details>
+                    <summary style="color: white;">プロパティ</summary>
+                    <div class="description">
 
-                    <h4>group</h4>
-                    <div class="vertical-line">
-                        <div class="description">
-                            <p><strong>型: </strong>
-                                文字列
-                            </p>
-                            <p><strong>説明: </strong>
-                                クリエイティブスロットからの場所。剣など。入れられる文字列は、公式が配布しているアドオンファイルのlangファイルの5551行目あたりから確認できる。自分で新しく作ることはできない。
-                            </p>
-                            <p><strong>例: </strong></p>
-                            <pre><code class="json">"group": "itemGroup.name.sword"</code></pre>
+                        <h4>group</h4>
+                        <div class="vertical-line">
+                            <div class="description">
+                                <p><span class="type-color">型: </span>
+                                    文字列
+                                </p>
+                                <p><span class="description-color">説明: </span>
+                                    クリエイティブスロットからの場所。剣など。入れられる文字列は、公式が配布しているアドオンファイルのlangファイルの5551行目あたりから確認できる。自分で新しく作ることはできない。
+                                </p>
+                                <p><span class="example-color">例: </span>
+                                <pre><code class="json">"group": "itemGroup.name.sword"</code></pre>
+                            </div>
                         </div>
-                    </div>
 
-                    <h4 class="heading">category</h4>
-                    <div class="vertical-line">
-                        <div class="description">
-                            <p><strong>型: </strong>
-                                文字列
-                            </p>
-                            <p><strong>説明: </strong>
-                                アイテムのカテゴリー。所持品、アイテムなど。
-                                <strong>construction(構築) equipment(所持品) items(アイテム) nature(性質) none(なし)</strong>
-                                の5つから選択できる。noneの場合、コマンドからの入手も不可能となる。
-                            </p>
-                            <p><strong>例: </strong></p>
-                            <pre><code class="json">"category": "equipment"</code></pre>
+                        <h4 class="heading">category</h4>
+                        <div class="vertical-line">
+                            <div class="description">
+                                <p><span class="type-color">型: </span>
+                                    文字列
+                                </p>
+                                <p><span class="description-color">説明: </span>
+                                    アイテムのカテゴリー。所持品、アイテムなど。
+                                    <strong>construction(構築) equipment(所持品) items(アイテム) nature(性質) none(なし)</strong>
+                                    の5つから選択できる。noneの場合、コマンドからの入手も不可能となる。
+                                </p>
+                                <p><span class="example-color">例: </span>
+                                <pre><code class="json">"category": "equipment"</code></pre>
+                            </div>
                         </div>
-                    </div>
 
-                    <h4 class="heading">is_hidden_in_commands</h4>
-                    <div class="vertical-line">
-                        <div class="description">
-                            <p><strong>型: </strong>
-                                真偽値
-                            </p>
-                            <p><strong>説明: </strong>
-                                アイテムがコマンドで指定できるか。trueでできない、falseでできる。
-                            </p>
-                            <p><strong>例: </strong></p>
-                            <pre><code class="json">"is_hidden_in_commands": true</code></pre>
+                        <h4 class="heading">is_hidden_in_commands</h4>
+                        <div class="vertical-line">
+                            <div class="description">
+                                <p><span class="type-color">型: </span>
+                                    真偽値
+                                </p>
+                                <p><span class="description-color">説明: </span>
+                                    アイテムがコマンドで指定できるか。trueでできない、falseでできる。
+                                </p>
+                                <p><span class="example-color">例: </span>
+                                <pre><code class="json">"is_hidden_in_commands": true</code></pre>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                </details>
             </div>
         </div>
 

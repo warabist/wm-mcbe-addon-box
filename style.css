@@ -4,23 +4,39 @@
 }
 
 h1 {
+    font-family: sans-serif;
     color: white
 }
 
 h2 {
+    font-family: sans-serif;
     color: white
 }
 
 h3 {
+    font-family: sans-serif;
     color: white
 }
 
 h4 {
+    font-family: sans-serif;
     color: white
 }
 
 p {
+    font-family: sans-serif;
     color: white
+}
+
+pre {
+    padding: 10px;
+    background-color: rgb(49, 49, 49);
+    border: 2px solid rgb(69, 69, 69);
+}
+
+pre code {
+    color: rgb(217, 217, 217);
+    font-family: sans-serif
 }
 
 .link-text {
@@ -141,4 +157,24 @@ body {
 
 code {
     font-size: large;
+}
+
+.type-color {
+    color: rgb(0, 86, 166);
+    font-weight: bold;
+}
+
+.default-value-color {
+    color: rgb(0, 155, 8);
+    font-weight: bold;
+}
+
+.description-color {
+    color: rgb(159, 66, 0);
+    font-weight: bold;
+}
+
+.example-color {
+    color: rgb(165, 0, 191);
+    font-weight: bold;
 }
