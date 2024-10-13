@@ -28,6 +28,10 @@ p {
     color: white
 }
 
+li {
+    font-family: sans-serif;
+}
+
 pre {
     padding: 10px;
     background-color: rgb(49, 49, 49);
@@ -182,4 +186,5 @@ code {
 .property-color {
     color: rgb(201, 148, 0);
     font-weight: bold;
+    font-family: sans-serif;
 }
