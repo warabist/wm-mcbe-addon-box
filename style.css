@@ -153,6 +153,7 @@ body {
 .property-grid-item {
     text-decoration: none;
     color: white;
+    margin-bottom: 4px;
 }
 
 .property-grid-item:hover {
