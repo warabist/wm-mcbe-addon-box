@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>アイテム/Component/custom_components</title>
+    <link rel="shortcut icon" href="../../../icon.png">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+
+    <script src="../../../index.js"></script>
+
+    <div id="header"></div>
+
+    <div style="margin: 30px;">
+
+        <h2>custom_components - カスタムコンポーネント</h2>
+        <div class="vertical-line"> <!--縦線-->
+            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                <!--説明-->
+                <p><span class="description-color">説明: </span>
+                    ScriptAPIで追加したコンポーネントを使える。
+                </p>
+
+                <!--型-->
+                <p><span class="type-color">型: </span>
+                    string[]
+                </p>
+
+                <!--例-->
+                <p><span class="example-color">例: </span></p>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('component-example', 'component-example-button-text')">
+                    <a id="component-example-button-text">Copy</a>
+                </button>
+                <pre><code id="component-example">"minecraft:custom_components": [ "my_component:on_use" ]</code></pre>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--ヘッダー読み込み-->
+    <script>
+        fetch("../../../header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

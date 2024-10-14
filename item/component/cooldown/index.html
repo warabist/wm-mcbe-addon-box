@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>アイテム/Component/cooldown</title>
+    <link rel="shortcut icon" href="../../../icon.png">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+
+    <script src="../../../index.js"></script>
+
+    <div id="header"></div>
+
+    <div style="margin: 30px;">
+
+        <h2>cooldown - クールダウン</h2>
+        <div class="vertical-line"> <!--縦線-->
+            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                <!--説明-->
+                <p><span class="description-color">説明: </span>
+                    アイテムのクールダウンを設定する。
+                </p>
+
+                <!--型-->
+                <p><span class="type-color">型: </span>
+                    object
+                </p>
+
+                <!--プロパティ一覧(折り畳み)-->
+                <details>
+                    <summary class="property-color">プロパティ</summary>
+                    <div class="description"> <!--要素をまとめて少し右へ-->
+
+                        <!--プロパティ-->
+                        <h4>category [必須]</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    クールダウンのカテゴリ。同じカテゴリのクールダウンを持つアイテムは全てクールダウンされる。カテゴリーはバニラのものだけでなく、自分で新しく作ることも可能。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    string
+                                </p>
+
+                                <!--ここでプロパティをまた挟む場合、プロパティのまとまりをコピーしてここへ-->
+
+                                <!--例-->
+                                <p><span class="example-color">例: </span></p>
+
+                                <!--コードブロック-->
+                                <button
+                                    onclick="copyButton('component/category-example', 'component/category-example-button-text')">
+                                    <a id="component/category-example-button-text">Copy</a>
+                                </button>
+                                <pre><code id="component/category-example">"category": "wind_charge"</code></pre>
+
+                            </div>
+                        </div>
+
+                        <!--プロパティ-->
+                        <h4>duration [必須]</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    クールダウンの時間(秒単位)。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    number
+                                </p>
+
+                                <!--ここでプロパティをまた挟む場合、プロパティのまとまりをコピーしてここへ-->
+
+                                <!--例-->
+                                <p><span class="example-color">例: </span></p>
+
+                                <!--コードブロック-->
+                                <button
+                                    onclick="copyButton('component/duration-example', 'component/duration-example-button-text')">
+                                    <a id="component/duration-example-button-text">Copy</a>
+                                </button>
+                                <pre><code id="component/duration-example">"duration": 1.5</code></pre>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </details>
+
+                <!--例-->
+                <p><span class="example-color">例: </span></p>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('component-example', 'component-example-button-text')">
+                    <a id="component-example-button-text">Copy</a>
+                </button>
+                <pre><code id="component-example">"minecraft:cooldown": {
+    "category": "my_food",
+    "duration": 10
+}</code></pre>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--ヘッダー読み込み-->
+    <script>
+        fetch("../../../header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

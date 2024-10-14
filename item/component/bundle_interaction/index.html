@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>要素の場所、名前</title>
+    <title>アイテム/Component/bundle_interaction</title>
     <link rel="shortcut icon" href="../../../icon.png">
     <link rel="stylesheet" href="../../../style.css">
 </head>
@@ -16,18 +16,18 @@
 
     <div style="margin: 30px;">
 
-        <h2>要素名 - 日本語名</h2>
+        <h2>bundle_interaction - バンドルインタラクション</h2>
         <div class="vertical-line"> <!--縦線-->
             <div class="description"> <!--要素をまとめて少し右へ-->
 
                 <!--説明-->
                 <p><span class="description-color">説明: </span>
-                    説明
+                    バンドルのようにインタラクトでアイテムを出せるようにする。storage_itemコンポーネントが必要。
                 </p>
 
                 <!--型-->
                 <p><span class="type-color">型: </span>
-                    型
+                    object
                 </p>
 
                 <!--プロパティ一覧(折り畳み)-->
@@ -36,18 +36,18 @@
                     <div class="description"> <!--要素をまとめて少し右へ-->
 
                         <!--プロパティ-->
-                        <h4>プロパティ名</h4>
+                        <h4>num_viewable_slots</h4>
                         <div class="vertical-line"> <!--縦線-->
                             <div class="description"> <!--要素をまとめて少し右へ-->
 
                                 <!--説明-->
                                 <p><span class="description-color">説明: </span>
-                                    説明
+                                    表示できるスロットの数。1～64まで指定できる。デフォルトでは12。
                                 </p>
 
                                 <!--型-->
                                 <p><span class="type-color">型: </span>
-                                    型
+                                    integer
                                 </p>
 
                                 <!--ここでプロパティをまた挟む場合、プロパティのまとまりをコピーしてここへ-->
@@ -56,10 +56,11 @@
                                 <p><span class="example-color">例: </span></p>
 
                                 <!--コードブロック-->
-                                <button onclick="copyButton('コード名-example', 'コード名-example-button-text')">
-                                    <a id="コード名-example-button-text">Copy</a>
+                                <button
+                                    onclick="copyButton('component/num_viewable_slots-example', 'component/num_viewable_slots-example-button-text')">
+                                    <a id="component/num_viewable_slots-example-button-text">Copy</a>
                                 </button>
-                                <pre><code id="コード名-example">コード</code></pre>
+                                <pre><code id="component/num_viewable_slots-example">"num_viewable_slots": 32</code></pre>
 
                             </div>
                         </div>
@@ -71,10 +72,12 @@
                 <p><span class="example-color">例: </span></p>
 
                 <!--コードブロック-->
-                <button onclick="copyButton('コード名-example', 'コード名-example-button-text')">
-                    <a id="コード名-example-button-text">Copy</a>
+                <button onclick="copyButton('component-example', 'component-example-button-text')">
+                    <a id="component-example-button-text">Copy</a>
                 </button>
-                <pre><code id="コード名-example">コード</code></pre>
+                <pre><code id="component-example">"minecraft:bundle_interaction": {
+    "num_viewable_slots": 32
+}</code></pre>
 
             </div>
         </div>

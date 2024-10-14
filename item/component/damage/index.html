@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>要素の場所、名前</title>
+    <title>アイテム/Component/damage</title>
     <link rel="shortcut icon" href="../../../icon.png">
     <link rel="stylesheet" href="../../../style.css">
 </head>
@@ -16,18 +16,18 @@
 
     <div style="margin: 30px;">
 
-        <h2>要素名 - 日本語名</h2>
+        <h2>damage - 攻撃力</h2>
         <div class="vertical-line"> <!--縦線-->
             <div class="description"> <!--要素をまとめて少し右へ-->
 
                 <!--説明-->
                 <p><span class="description-color">説明: </span>
-                    説明
+                    攻撃力をつけられる。
                 </p>
 
                 <!--型-->
                 <p><span class="type-color">型: </span>
-                    型
+                    integer | object
                 </p>
 
                 <!--プロパティ一覧(折り畳み)-->
@@ -36,18 +36,13 @@
                     <div class="description"> <!--要素をまとめて少し右へ-->
 
                         <!--プロパティ-->
-                        <h4>プロパティ名</h4>
+                        <h4>value</h4>
                         <div class="vertical-line"> <!--縦線-->
                             <div class="description"> <!--要素をまとめて少し右へ-->
 
-                                <!--説明-->
-                                <p><span class="description-color">説明: </span>
-                                    説明
-                                </p>
-
                                 <!--型-->
                                 <p><span class="type-color">型: </span>
-                                    型
+                                    integer
                                 </p>
 
                                 <!--ここでプロパティをまた挟む場合、プロパティのまとまりをコピーしてここへ-->
@@ -56,10 +51,11 @@
                                 <p><span class="example-color">例: </span></p>
 
                                 <!--コードブロック-->
-                                <button onclick="copyButton('コード名-example', 'コード名-example-button-text')">
-                                    <a id="コード名-example-button-text">Copy</a>
+                                <button
+                                    onclick="copyButton('component/value-example', 'component/value-example-button-text')">
+                                    <a id="component/value-example-button-text">Copy</a>
                                 </button>
-                                <pre><code id="コード名-example">コード</code></pre>
+                                <pre><code id="component/value-example">"value": 10</code></pre>
 
                             </div>
                         </div>
@@ -71,10 +67,19 @@
                 <p><span class="example-color">例: </span></p>
 
                 <!--コードブロック-->
-                <button onclick="copyButton('コード名-example', 'コード名-example-button-text')">
-                    <a id="コード名-example-button-text">Copy</a>
+                <button onclick="copyButton('component-integer-example', 'component-integer-example-button-text')">
+                    <a id="component-integer-example-button-text">Copy</a>
                 </button>
-                <pre><code id="コード名-example">コード</code></pre>
+                <pre><code id="component-integer-example">"minecraft:damage": 8</code></pre>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('component-object-example', 'component-object-example-button-text')"
+                    style="margin-top: 10px;">
+                    <a id="component-object-example-button-text">Copy</a>
+                </button>
+                <pre><code id="component-object-example">"minecraft:damage": {
+    "value": 8
+}</code></pre>
 
             </div>
         </div>

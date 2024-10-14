@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>要素の場所、名前</title>
+    <title>アイテム/Component/damage_absorption</title>
     <link rel="shortcut icon" href="../../../icon.png">
     <link rel="stylesheet" href="../../../style.css">
 </head>
@@ -16,18 +16,18 @@
 
     <div style="margin: 30px;">
 
-        <h2>要素名 - 日本語名</h2>
+        <h2>damage_absorption - 吸収ダメージ設定</h2>
         <div class="vertical-line"> <!--縦線-->
             <div class="description"> <!--要素をまとめて少し右へ-->
 
                 <!--説明-->
                 <p><span class="description-color">説明: </span>
-                    説明
+                    アイテムが防具の時、このコンポーネントで指定したダメージの種類のみダメージが吸収される。吸収したダメージは耐久値を低下させる。wearable、durabilityコンポーネントが必要。
                 </p>
 
                 <!--型-->
                 <p><span class="type-color">型: </span>
-                    型
+                    object
                 </p>
 
                 <!--プロパティ一覧(折り畳み)-->
@@ -36,18 +36,18 @@
                     <div class="description"> <!--要素をまとめて少し右へ-->
 
                         <!--プロパティ-->
-                        <h4>プロパティ名</h4>
+                        <h4>absorbable_causes [必須]</h4>
                         <div class="vertical-line"> <!--縦線-->
                             <div class="description"> <!--要素をまとめて少し右へ-->
 
                                 <!--説明-->
                                 <p><span class="description-color">説明: </span>
-                                    説明
+                                    吸収させたいダメージの種類(minecraft damage causeで調べればでてくるはず)を指定する。
                                 </p>
 
                                 <!--型-->
                                 <p><span class="type-color">型: </span>
-                                    型
+                                    string[]
                                 </p>
 
                                 <!--ここでプロパティをまた挟む場合、プロパティのまとまりをコピーしてここへ-->
@@ -56,10 +56,11 @@
                                 <p><span class="example-color">例: </span></p>
 
                                 <!--コードブロック-->
-                                <button onclick="copyButton('コード名-example', 'コード名-example-button-text')">
-                                    <a id="コード名-example-button-text">Copy</a>
+                                <button
+                                    onclick="copyButton('component/absorbable_causes-example', 'component/absorbable_causes-example-button-text')">
+                                    <a id="component/absorbable_causes-example-button-text">Copy</a>
                                 </button>
-                                <pre><code id="コード名-example">コード</code></pre>
+                                <pre><code id="component/absorbable_causes-example">"absorbable_causes": [ "fire", "fall" ]</code></pre>
 
                             </div>
                         </div>
@@ -71,10 +72,12 @@
                 <p><span class="example-color">例: </span></p>
 
                 <!--コードブロック-->
-                <button onclick="copyButton('コード名-example', 'コード名-example-button-text')">
-                    <a id="コード名-example-button-text">Copy</a>
+                <button onclick="copyButton('component-example', 'component-example-button-text')">
+                    <a id="component-example-button-text">Copy</a>
                 </button>
-                <pre><code id="コード名-example">コード</code></pre>
+                <pre><code id="component-example">"minecraft:damage_absorption": {
+    "absorbable_causes": [ "sonic_boom" ]
+}</code></pre>
 
             </div>
         </div>
