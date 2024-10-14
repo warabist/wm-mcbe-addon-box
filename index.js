@@ -13,4 +13,9 @@ function copyButton(elementId, buttonTextId) {
     const button = document.getElementById(buttonTextId);
     button.innerHTML = 'Copied';
 
+    //CopiedをCopyに直す
+    setTimeout(() => {
+        button.innerHTML = 'Copy';
+    }, 1000);
+
 }

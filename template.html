@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>要素の場所、名前</title>
+    <link rel="shortcut icon" href="../../../icon.png">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+
+    <script src="../../../index.js"></script>
+
+    <div id="header"></div>
+
+    <div style="margin: 30px;">
+
+        <h2>要素名 - 日本語名</h2>
+        <div class="vertical-line"> <!--縦線-->
+            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                <!--説明-->
+                <p><span class="description-color">説明: </span>
+                    説明
+                </p>
+
+                <!--型-->
+                <p><span class="type-color">型: </span>
+                    型
+                </p>
+
+                <!--プロパティ一覧(折り畳み)-->
+                <details>
+                    <summary class="property-color">プロパティ</summary>
+                    <div class="description"> <!--要素をまとめて少し右へ-->
+
+                        <!--プロパティ-->
+                        <h4>プロパティ名</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    説明
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    型
+                                </p>
+
+                                <!--ここでプロパティをまた挟む場合、プロパティのまとまりをコピーしてここへ-->
+
+                                <!--例-->
+                                <p><span class="example-color">例: </span></p>
+
+                                <!--コードブロック-->
+                                <button onclick="copyButton('コード名-example', 'コード名-example-button-text')">
+                                    <a id="コード名-example-button-text">Copy</a>
+                                </button>
+                                <pre><code id="コード名-example">コード</code></pre>
+
+                            </div>
+                        </div>
+
+                        <!--プロパティが2つ以上ある場合は、以降のh4のclassにheadingをつける-->
+
+                    </div>
+                </details>
+
+                <!--例-->
+                <p><span class="example-color">例: </span></p>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('コード名-example', 'コード名-example-button-text')">
+                    <a id="コード名-example-button-text">Copy</a>
+                </button>
+                <pre><code id="コード名-example">コード</code></pre>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--ヘッダー読み込み-->
+    <script>
+        fetch("../../../header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

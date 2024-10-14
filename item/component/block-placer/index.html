@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>アイテム/Component/block_placer</title>
+    <link rel="shortcut icon" href="../../../icon.png">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+
+    <script src="../../../index.js"></script>
+
+    <div id="header"></div>
+
+    <div style="margin: 30px;">
+
+        <h2>block_placer - ブロック設置</h2>
+        <div class="vertical-line"> <!--縦線-->
+            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                <!--説明-->
+                <p><span class="description-color">説明: </span>
+                    ブロックを設置できるようにする。
+                </p>
+
+                <!--型-->
+                <p><span class="type-color">型: </span>
+                    object
+                </p>
+
+                <!--プロパティ一覧(折り畳み)-->
+                <details>
+                    <summary class="property-color">プロパティ</summary>
+                    <div class="description"> <!--要素をまとめて少し右へ-->
+
+                        <!--プロパティ-->
+                        <h4>block [必須]</h4> <!--プロパティ名-->
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    置くブロックの種類をIDで指定する。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    string
+                                </p>
+
+                                <!--ここでプロパティをまた挟む場合、このプロパティのまとまりをコピーしてここへ-->
+
+                                <!--例-->
+                                <p><span class="example-color">例: </span></p>
+
+                                <!--コードブロック-->
+                                <button onclick="copyButton('obj/block-example', 'obj/block-example-button-text')">
+                                    <a id="obj/block-example-button-text">Copy</a>
+                                </button>
+                                <pre><code id="obj/block-example">"block": "minecraft:grass_block"</code></pre>
+
+                            </div>
+                        </div>
+
+                        <!--プロパティが2つ以上ある場合は、以降のh4のclassにheadingをつける-->
+
+                        <h4 class="heading">use_on</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    設置できるブロックのリスト。要素がstringのとき、それはブロックのID。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    (object | string)[]
+                                </p>
+
+                                <!--プロパティ一覧(折り畳み)-->
+                                <details>
+                                    <summary class="property-color">アイテムプロパティ</summary>
+                                    <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                        <!--プロパティ-->
+                                        <h4>name [必須]</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--説明-->
+                                                <p><span class="description-color">説明: </span>
+                                                    ブロックのID。
+                                                </p>
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    string
+                                                </p>
+
+                                                <!--ここでプロパティをまた挟む場合、プロパティのまとまりをコピーしてここへ-->
+
+                                                <!--例-->
+                                                <p><span class="example-color">例: </span></p>
+
+                                                <!--コードブロック-->
+                                                <button
+                                                    onclick="copyButton('obj/use_on/name-example', 'obj/use_on/name-example-button-text')">
+                                                    <a id="obj/use_on/name-example-button-text">Copy</a>
+                                                </button>
+                                                <pre><code id="obj/use_on/name-example">"name": "minecraft:grass_block"</code></pre>
+
+                                            </div>
+                                        </div>
+
+                                        <!--プロパティが2つ以上ある場合は、以降のh4のclassにheadingをつける-->
+
+                                        <h4 class="heading">states</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--説明-->
+                                                <p><span class="description-color">説明: </span>
+                                                    ブロックのステート。
+                                                </p>
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    object
+                                                </p>
+
+                                                <!--ここでプロパティをまた挟む場合、プロパティのまとまりをコピーしてここへ-->
+
+                                                <!--例-->
+                                                <p><span class="example-color">例: </span></p>
+
+                                                <!--コードブロック-->
+                                                <button
+                                                    onclick="copyButton('obj/use_on/states-example', 'obj/use_on/states-example-button-text')">
+                                                    <a id="obj/use_on/states-example-button-text">Copy</a>
+                                                </button>
+                                                <pre><code id="obj/use_on/states-example">"states": {
+    "height": 5
+}</code></pre>
+
+                                            </div>
+                                        </div>
+
+                                        <h4 class="heading">tags</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--説明-->
+                                                <p><span class="description-color">説明: </span>
+                                                    ブロックのタグ。
+                                                </p>
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    string
+                                                </p>
+
+                                                <!--ここでプロパティをまた挟む場合、プロパティのまとまりをコピーしてここへ-->
+
+                                                <!--例-->
+                                                <p><span class="example-color">例: </span></p>
+
+                                                <!--コードブロック-->
+                                                <button
+                                                    onclick="copyButton('obj/use_on/tags-example', 'obj/use_on/tags-example-button-text')">
+                                                    <a id="obj/use_on/tags-example-button-text">Copy</a>
+                                                </button>
+                                                <pre><code id="obj/use_on/tags-example">"tags": "stone"</code></pre>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </details>
+
+                                <!--例-->
+                                <p><span class="example-color">例: </span></p>
+
+                                <!--コードブロック-->
+                                <button onclick="copyButton('obj/use_on-example', 'obj/use_on-example-button-text')">
+                                    <a id="obj/use_on-example-button-text">Copy</a>
+                                </button>
+                                <pre><code id="obj/use_on-example">"use_on": [
+    {
+        "name": "minecraft:barrel",
+        "states": {
+            "facing_direction": 1
+        }
+    },
+    "minecraft:stone"
+]</code></pre>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </details>
+
+                <!--例-->
+                <p><span class="example-color">例: </span></p>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('obj-example', 'obj-example-button-text')">
+                    <a id="obj-example-button-text">Copy</a>
+                </button>
+                <pre><code id="obj-example">"minecraft:block_placer": {
+    "block": "minecraft:grass_block",
+    "use_on": [
+        "minecraft:stone"
+    ]
+}</code></pre>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--ヘッダー読み込み-->
+    <script>
+        fetch("../../../header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

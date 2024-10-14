@@ -19,11 +19,11 @@
         <h2>description</h2>
         <div class="vertical-line">
             <div class="description">
-                <p><span class="type-color">型: </span>
-                    オブジェクト
-                </p>
                 <p><span class="description-color">説明: </span>
                     アイテムのIDや種類を決めることができるプロパティ。
+                </p>
+                <p><span class="type-color">型: </span>
+                    object
                 </p>
                 <pre><code>{
     "format_version": "1.21.30",
@@ -49,13 +49,13 @@
         <h3 id="identifier" class="heading">identifier - 識別子</h3>
         <div class="vertical-line">
             <div class="description">
-                <p><span class="type-color">型: </span>
-                    文字列
-                </p>
                 <p>
                     <span class="description-color">説明: </span>
                     アイテムのID。IDは半角英数字記号で <strong>名前空間:名前</strong>
                     という形でなければ無効となる(記号はおそらくアンダーバーのみ)。また、名前空間にminecraftを使用してはならない。
+                </p>
+                <p><span class="type-color">型: </span>
+                    string
                 </p>
                 <p><span class="example-color">例: </span></p>
                 <button onclick="copyButton('identifier-example', 'identifier-example-button-text')">
@@ -69,14 +69,11 @@
         <h3 id="menu-category" class="heading">menu_category - メニューカテゴリ</h3>
         <div class="vertical-line">
             <div class="description">
-                <p><span class="type-color">型: </span>
-                    オブジェクト
-                </p>
-                <p><span class="default-value-color">デフォルト値: </span>
-                    { "category": "items" }
-                </p>
                 <p><span class="description-color">説明: </span>
                     アイテムの種類。
+                </p>
+                <p><span class="type-color">型: </span>
+                    object
                 </p>
                 <details>
                     <summary class="property-color">プロパティ</summary>
@@ -85,11 +82,11 @@
                         <h4>group</h4>
                         <div class="vertical-line">
                             <div class="description">
-                                <p><span class="type-color">型: </span>
-                                    文字列
-                                </p>
                                 <p><span class="description-color">説明: </span>
                                     クリエイティブスロットからの場所。剣など。入れられる文字列は、公式が配布しているアドオンファイルのlangファイルの5551行目あたりから確認できる。自分で新しく作ることはできない。
+                                </p>
+                                <p><span class="type-color">型: </span>
+                                    string
                                 </p>
                                 <p><span class="example-color">例: </span></p>
                                 <button onclick="copyButton('group-example', 'group-example-button-text')">
@@ -102,13 +99,13 @@
                         <h4 class="heading">category</h4>
                         <div class="vertical-line">
                             <div class="description">
-                                <p><span class="type-color">型: </span>
-                                    文字列
-                                </p>
                                 <p><span class="description-color">説明: </span>
                                     アイテムのカテゴリー。所持品、アイテムなど。
                                     <strong>construction(構築) equipment(所持品) items(アイテム) nature(性質) none(なし)</strong>
                                     の5つから選択できる。noneの場合、コマンドからの入手も不可能となる。
+                                </p>
+                                <p><span class="type-color">型: </span>
+                                    string
                                 </p>
                                 <p><span class="example-color">例: </span></p>
                                 <button onclick="copyButton('category-example', 'category-example-button-text')">
@@ -121,11 +118,11 @@
                         <h4 class="heading">is_hidden_in_commands</h4>
                         <div class="vertical-line">
                             <div class="description">
-                                <p><span class="type-color">型: </span>
-                                    真偽値
-                                </p>
                                 <p><span class="description-color">説明: </span>
-                                    アイテムがコマンドで指定できるか。trueでできない、falseでできる。
+                                    アイテムがコマンドで指定できるか。trueでできない。
+                                </p>
+                                <p><span class="type-color">型: </span>
+                                    bool
                                 </p>
                                 <p><span class="example-color">例: </span></p>
                                 <button

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>アイテム/Component</title>
+    <link rel="shortcut icon" href="../../icon.png">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <script src="../../index.js"></script>
+
+    <div id="header"></div>
+
+    <div style="margin: 30px;">
+
+        <!--Component基本説明-->
+        <h2>components</h2>
+        <div class="vertical-line">
+            <div class="description">
+                <p><span class="type-color">型: </span>
+                    オブジェクト
+                </p>
+                <p><span class="description-color">説明: </span>
+                    アイテムの性質を決めるコンポーネントをいれるプロパティ。
+                </p>
+                <pre><code>{
+    "format_version": "1.21.30",
+    "minecraft:item": {
+      "components": {...} //この位置
+    }
+}</code></pre>
+            </div>
+        </div>
+
+        <!--コンポーネント一覧-->
+        <h2 class="heading">コンポーネント</h2>
+        <div class="property-grid">
+
+            <a class="property-grid-item" href="allow-off-hand/index.html">
+                <li>allow_off_hand - オフハンドの許可</li>
+            </a>
+
+            <a class="property-grid-item" href="block-placer/index.html">
+                <li>block_placer - ブロック設置</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>bundle_interaction - バンドルインタラクション</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>can_destroy_in_creative - クリエイティブでの破壊</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>cooldown - クールダウン</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>custom_components - カスタムコンポーネント</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>damage - 攻撃力</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>damage_absorption - ダメージ吸収</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>digger - 破壊ツール</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>display_name - 表示名</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>durability - 耐久</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>durability_sensor - 耐久センサー</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>dyeable - 染料</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>enchantable - エンチャント</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>entity_placer - エンティティ設置</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>food - 食料</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>fuel - 燃料</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>glint - 輝き</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>hand_equipped - 武器としての所持</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>hover_text_color - ホバー時の文字色</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>icon - アイコン</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>interact_button - 使用ボタン</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>liquid_clipped - 水への使用判定</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>max_stack_size - 最大スタック数</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>projectile - 発射体</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>rarity - 希少度</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>record - レコード</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>repairable - 修理</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>shooter - 発射</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>should_despawn - デスポーン</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>stacked_by_data - 別データ値とのスタック</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>storage_item - ストレージ</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>tags - タグ</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>throwable - 投擲</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>use_animation - 使用アニメーション</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>use_modifiers - 使用設定</li>
+            </a>
+
+            <a class="property-grid-item" href="">
+                <li>wearable - 着用</li>
+            </a>
+
+        </div>
+
+    </div>
+
+    <script>
+        fetch("../../header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+    </script>
+</body>
+
+</html>
