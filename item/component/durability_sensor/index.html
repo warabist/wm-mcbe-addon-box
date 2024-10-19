@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>アイテム/Component/block_placer</title>
+    <title>アイテム/Component/durability_sensor</title>
     <link rel="shortcut icon" href="../../../icon.png">
     <link rel="stylesheet" href="../../../style.css">
 </head>
@@ -16,13 +16,13 @@
 
     <div style="margin: 30px;">
 
-        <h2>block_placer - ブロック設置</h2>
+        <h2>durability_sensor - 耐久センサー</h2>
         <div class="vertical-line"> <!--縦線-->
             <div class="description"> <!--要素をまとめて少し右へ-->
 
                 <!--説明-->
                 <p><span class="description-color">説明: </span>
-                    ブロックを設置できるようにする。
+                    アイテムの耐久値が減ったときに指定したパーティクルやサウンド等のエフェクトを発生させることができる。
                 </p>
 
                 <!--型-->
@@ -30,58 +30,57 @@
                     object
                 </p>
 
-                <!--プロパティ一覧(折り畳み)-->
+                <!--プロパティ説明-->
                 <details>
                     <summary class="property-color">プロパティ</summary>
                     <div class="description"> <!--要素をまとめて少し右へ-->
 
                         <!--プロパティ-->
-                        <h4>block [必須]</h4> <!--プロパティ名-->
+                        <h4>durability_thresholds [必須]</h4>
                         <div class="vertical-line"> <!--縦線-->
                             <div class="description"> <!--要素をまとめて少し右へ-->
 
                                 <!--説明-->
                                 <p><span class="description-color">説明: </span>
-                                    置くブロックの種類をIDで指定する。
+                                    発生させるエフェクト、条件のリスト。条件を通るオブジェクトが複数ある場合、durabilityの値が低いオブジェクトが優先される。
                                 </p>
 
                                 <!--型-->
                                 <p><span class="type-color">型: </span>
-                                    string
+                                    object[]
                                 </p>
 
-                            </div>
-                        </div>
-
-                        <!--プロパティが2つ以上ある場合は、以降のh4のclassにheadingをつける-->
-
-                        <h4>use_on</h4>
-                        <div class="vertical-line"> <!--縦線-->
-                            <div class="description"> <!--要素をまとめて少し右へ-->
-
-                                <!--説明-->
-                                <p><span class="description-color">説明: </span>
-                                    設置できるブロックのリスト。要素がstringのとき、それはブロックのID。
-                                </p>
-
-                                <!--型-->
-                                <p><span class="type-color">型: </span>
-                                    (object | string)[]
-                                </p>
-
-                                <!--プロパティ一覧(折り畳み)-->
+                                <!--プロパティ説明-->
                                 <details>
                                     <summary class="property-color">アイテムプロパティ</summary>
                                     <div class="description"> <!--要素をまとめて少し右へ-->
 
                                         <!--プロパティ-->
-                                        <h4>name</h4>
+                                        <h4>durability</h4>
                                         <div class="vertical-line"> <!--縦線-->
                                             <div class="description"> <!--要素をまとめて少し右へ-->
 
                                                 <!--説明-->
                                                 <p><span class="description-color">説明: </span>
-                                                    ブロックのID。
+                                                    アイテムの耐久値がこのプロパティで指定した値以下になれば、このエフェクトは発生する。
+                                                </p>
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    integer
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                        <!--プロパティ-->
+                                        <h4>particle_type</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--説明-->
+                                                <p><span class="description-color">説明: </span>
+                                                    発生させるパーティクル名。
                                                 </p>
 
                                                 <!--型-->
@@ -92,36 +91,14 @@
                                             </div>
                                         </div>
 
-                                        <!--プロパティが2つ以上ある場合は、以降のh4のclassにheadingをつける-->
-
-                                        <h4>states</h4>
+                                        <!--プロパティ-->
+                                        <h4>sound_event</h4>
                                         <div class="vertical-line"> <!--縦線-->
                                             <div class="description"> <!--要素をまとめて少し右へ-->
 
                                                 <!--説明-->
                                                 <p><span class="description-color">説明: </span>
-                                                    ブロックのステート。
-                                                </p>
-
-                                                <!--型-->
-                                                <p><span class="type-color">型: </span>
-                                                    object
-                                                </p>
-
-                                            </div>
-                                        </div>
-
-                                        <h4>tags</h4>
-                                        <div class="vertical-line"> <!--縦線-->
-                                            <div class="description"> <!--要素をまとめて少し右へ-->
-
-                                                <!--説明-->
-                                                <p><span class="description-color">説明: </span>
-                                                    ブロックのタグ。molangで指定する。<a
-                                                        href="https://learn.microsoft.com/en-us/minecraft/creator/reference/content/blockreference/examples/vanillablocktags?view=minecraft-bedrock-stable"
-                                                        class="link-text">バニラブロックのタグ一覧</a><br>(例: query.any_tag('stone',
-                                                    'wood')、query.all_tag('stone',
-                                                    'minecraft:iron_tier_destructible'))
+                                                    再生するサウンド名。
                                                 </p>
 
                                                 <!--型-->
@@ -145,18 +122,15 @@
                 <p><span class="example-color">例: </span></p>
 
                 <!--コードブロック-->
-                <button onclick="copyButton('obj-example', 'obj-example-button-text')">
-                    <a id="obj-example-button-text">Copy</a>
+                <button onclick="copyButton('component-example', 'component-example-button-text')">
+                    <a id="component-example-button-text">Copy</a>
                 </button>
-                <pre><code id="obj-example">"minecraft:block_placer": {
-    "block": "minecraft:grass_block",
-    "use_on": [
-        "minecraft:stone",
+                <pre><code id="component-example">"minecraft:durability_sensor": {
+    "durability_thresholds": [
         {
-            "name": "minecraft:barrel",
-            "states": {
-                "facing_direction": 1
-            }
+            "durability": 1,
+            "particle_type": "minecraft:huge_explosion_emitter"
+            "sound_event": "random.explode"
         }
     ]
 }</code></pre>

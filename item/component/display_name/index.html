@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>アイテム/Component/bundle_interaction</title>
+    <title>アイテム/Component/display_name</title>
     <link rel="shortcut icon" href="../../../icon.png">
     <link rel="stylesheet" href="../../../style.css">
 </head>
@@ -16,13 +16,13 @@
 
     <div style="margin: 30px;">
 
-        <h2>bundle_interaction - バンドルインタラクション</h2>
+        <h2>display_name - 表示名</h2>
         <div class="vertical-line"> <!--縦線-->
             <div class="description"> <!--要素をまとめて少し右へ-->
 
                 <!--説明-->
                 <p><span class="description-color">説明: </span>
-                    バンドルのようにインタラクトでアイテムを出せるようにする。storage_itemコンポーネントが必要。
+                    アイテムの表示名。
                 </p>
 
                 <!--型-->
@@ -36,18 +36,18 @@
                     <div class="description"> <!--要素をまとめて少し右へ-->
 
                         <!--プロパティ-->
-                        <h4>num_viewable_slots</h4>
+                        <h4>value</h4>
                         <div class="vertical-line"> <!--縦線-->
                             <div class="description"> <!--要素をまとめて少し右へ-->
 
                                 <!--説明-->
                                 <p><span class="description-color">説明: </span>
-                                    表示できるスロットの数。1～64まで指定できる。デフォルトでは12。
+                                    表示名。リソースパックのlangを指定することもできる。
                                 </p>
 
                                 <!--型-->
                                 <p><span class="type-color">型: </span>
-                                    integer
+                                    string
                                 </p>
 
                             </div>
@@ -63,8 +63,8 @@
                 <button onclick="copyButton('component-example', 'component-example-button-text')">
                     <a id="component-example-button-text">Copy</a>
                 </button>
-                <pre><code id="component-example">"minecraft:bundle_interaction": {
-    "num_viewable_slots": 32
+                <pre><code id="component-example">"minecraft:display_name": {
+    "value": "勇者の剣"
 }</code></pre>
 
             </div>

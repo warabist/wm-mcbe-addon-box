@@ -49,6 +49,7 @@ button {
     background-color: rgb(49, 49, 49);
     height: 30px;
     width: 70px;
+    margin-top: 10px;
 }
 
 button a {

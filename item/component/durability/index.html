@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>アイテム/Component/cooldown</title>
+    <title>アイテム/Component/durability</title>
     <link rel="shortcut icon" href="../../../icon.png">
     <link rel="stylesheet" href="../../../style.css">
 </head>
@@ -16,13 +16,13 @@
 
     <div style="margin: 30px;">
 
-        <h2>cooldown - クールダウン</h2>
+        <h2>durability - 耐久</h2>
         <div class="vertical-line"> <!--縦線-->
             <div class="description"> <!--要素をまとめて少し右へ-->
 
                 <!--説明-->
                 <p><span class="description-color">説明: </span>
-                    アイテムのクールダウンを設定する。
+                    アイテムの耐久。
                 </p>
 
                 <!--型-->
@@ -36,36 +36,70 @@
                     <div class="description"> <!--要素をまとめて少し右へ-->
 
                         <!--プロパティ-->
-                        <h4>category [必須]</h4>
+                        <h4>damage_chance</h4>
                         <div class="vertical-line"> <!--縦線-->
                             <div class="description"> <!--要素をまとめて少し右へ-->
 
                                 <!--説明-->
                                 <p><span class="description-color">説明: </span>
-                                    クールダウンのカテゴリ。同じカテゴリのクールダウンを持つアイテムは全てクールダウンされる。カテゴリーはバニラのものだけでなく、自分で新しく作ることも可能。
+                                    アイテムの耐久値が減る確率をパーセントで指定する。最小値(min)と最大値(max)を含むint範囲として定義される。
                                 </p>
 
                                 <!--型-->
                                 <p><span class="type-color">型: </span>
-                                    string
+                                    object
                                 </p>
+
+                                <!--プロパティ一覧(折り畳み)-->
+                                <details>
+                                    <summary class="property-color">プロパティ</summary>
+                                    <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                        <!--プロパティ-->
+                                        <h4>max</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    integer
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                        <!--プロパティ-->
+                                        <h4>min</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    integer
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </details>
 
                             </div>
                         </div>
 
                         <!--プロパティ-->
-                        <h4>duration [必須]</h4>
+                        <h4>max_durability [必須]</h4>
                         <div class="vertical-line"> <!--縦線-->
                             <div class="description"> <!--要素をまとめて少し右へ-->
 
                                 <!--説明-->
                                 <p><span class="description-color">説明: </span>
-                                    クールダウンの時間(秒単位)。
+                                    最大耐久値。このアイテムが壊れるまでに受けることができるダメージの量。
                                 </p>
 
                                 <!--型-->
                                 <p><span class="type-color">型: </span>
-                                    number
+                                    integer
                                 </p>
 
                             </div>
@@ -81,9 +115,12 @@
                 <button onclick="copyButton('component-example', 'component-example-button-text')">
                     <a id="component-example-button-text">Copy</a>
                 </button>
-                <pre><code id="component-example">"minecraft:cooldown": {
-    "category": "my_food",
-    "duration": 10
+                <pre><code id="component-example">"minecraft:durability": {
+    "damage_chance": {
+        "min": 0,
+        "max": 80
+    },
+    "max_durability": 1000
 }</code></pre>
 
             </div>
