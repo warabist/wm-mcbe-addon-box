@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>アイテム/Component/dyeable</title>
+    <title>アイテム/Component/enchantable</title>
     <link rel="shortcut icon" href="../../../icon.png">
     <link rel="stylesheet" href="../../../style.css">
 </head>
@@ -16,13 +16,13 @@
 
     <div style="margin: 30px;">
 
-        <h2>dyeable - 染色</h2>
+        <h2>enchantable - エンチャント</h2>
         <div class="vertical-line"> <!--縦線-->
             <div class="description"> <!--要素をまとめて少し右へ-->
 
                 <!--説明-->
                 <p><span class="description-color">説明: </span>
-                    アイテムを染色可能にする。
+                    アイテムに適用可能なエンチャントを設定する。
                 </p>
 
                 <!--型-->
@@ -36,18 +36,36 @@
                     <div class="description"> <!--要素をまとめて少し右へ-->
 
                         <!--プロパティ-->
-                        <h4>default_color</h4>
+                        <h4>slot [必須]</h4>
                         <div class="vertical-line"> <!--縦線-->
                             <div class="description"> <!--要素をまとめて少し右へ-->
 
                                 <!--説明-->
                                 <p><span class="description-color">説明: </span>
-                                    染色前のデフォルトの色を設定する。カラーコードかRGBで指定。
+                                    適用できるエンチャントの種類。例えばbowを入れると、アイテムは弓のようにエンチャントができる。
                                 </p>
 
                                 <!--型-->
                                 <p><span class="type-color">型: </span>
-                                    string | integer[]
+                                    string
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!--プロパティ-->
+                        <h4>value [必須]</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    良いエンチャントがつく確率。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    integer
                                 </p>
 
                             </div>
@@ -60,22 +78,13 @@
                 <p><span class="example-color">例: </span></p>
 
                 <!--コードブロック-->
-                <button onclick="copyButton('example-code-color-code', 'example-code-color-code-button-text')">
-                    <a id="example-code-color-code-button-text">Copy</a>
+                <button onclick="copyButton('example-code', 'example-code-button-text')">
+                    <a id="example-code-button-text">Copy</a>
                 </button>
-                <pre><code id="example-code-color-code">"minecraft:dyeable": {
-    "default_color": "#fef4f4"
-}
-                </code></pre>
-
-                <!--コードブロック-->
-                <button onclick="copyButton('example-code-rgb', 'example-code-rgb-button-text')">
-                    <a id="example-code-rgb-button-text">Copy</a>
-                </button>
-                <pre><code id="example-code-rgb">"minecraft:dyeable": {
-    "default_color": [ 254, 244, 244 ]
-}
-                </code></pre>
+                <pre><code id="example-code">"minecraft:enchantable": {
+    "slot": "sword",
+    "value": 100
+}</code></pre>
 
             </div>
         </div>
