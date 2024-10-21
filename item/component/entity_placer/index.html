@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>アイテム/Component/entity_placer</title>
+    <link rel="shortcut icon" href="../../../icon.png">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+
+    <script src="../../../index.js"></script>
+
+    <div id="header"></div>
+
+    <div style="margin: 30px;">
+
+        <h2>entity_placer - エンティティ設置</h2>
+        <div class="vertical-line"> <!--縦線-->
+            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                <!--説明-->
+                <p><span class="description-color">説明: </span>
+                    エンティティを設置できるようにする。
+                </p>
+
+                <!--型-->
+                <p><span class="type-color">型: </span>
+                    object
+                </p>
+
+                <!--プロパティ説明-->
+                <details>
+                    <summary class="property-color">プロパティ</summary>
+                    <div class="description"> <!--要素をまとめて少し右へ-->
+
+                        <!--プロパティ-->
+                        <h4>dispense_on</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    ディスペンサーでの、ブロックを設置できる条件。stringの場合はブロックのIDを入れる。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    (object | string)[]
+                                </p>
+
+                                <!--プロパティ一覧(折り畳み)-->
+                                <details>
+                                    <summary class="property-color">アイテムプロパティ</summary>
+                                    <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                        <!--プロパティ-->
+                                        <h4>name</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--説明-->
+                                                <p><span class="description-color">説明: </span>
+                                                    ブロックのID。
+                                                </p>
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    string
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                        <!--プロパティが2つ以上ある場合は、以降のh4のclassにheadingをつける-->
+
+                                        <h4>states</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--説明-->
+                                                <p><span class="description-color">説明: </span>
+                                                    ブロックのステート。
+                                                </p>
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    object
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                        <h4>tags</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--説明-->
+                                                <p><span class="description-color">説明: </span>
+                                                    ブロックのタグ。molangで指定する。<a
+                                                        href="https://learn.microsoft.com/en-us/minecraft/creator/reference/content/blockreference/examples/vanillablocktags?view=minecraft-bedrock-stable"
+                                                        class="link-text">バニラブロックのタグ一覧</a><br>(例: query.any_tag('stone',
+                                                    'wood')、query.all_tag('stone',
+                                                    'minecraft:iron_tier_destructible'))
+                                                </p>
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    string
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </details>
+
+                            </div>
+                        </div>
+
+                        <!--プロパティ-->
+                        <h4>entity</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    設置するエンティティのID。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    string
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!--プロパティ-->
+                        <h4>use_on</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    ブロックを設置できる条件。stringの場合はブロックのIDを入れる。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    (object | string)[]
+                                </p>
+
+                                <!--プロパティ一覧(折り畳み)-->
+                                <details>
+                                    <summary class="property-color">アイテムプロパティ</summary>
+                                    <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                        <!--プロパティ-->
+                                        <h4>name</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--説明-->
+                                                <p><span class="description-color">説明: </span>
+                                                    ブロックのID。
+                                                </p>
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    string
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                        <!--プロパティが2つ以上ある場合は、以降のh4のclassにheadingをつける-->
+
+                                        <h4>states</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--説明-->
+                                                <p><span class="description-color">説明: </span>
+                                                    ブロックのステート。
+                                                </p>
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    object
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                        <h4>tags</h4>
+                                        <div class="vertical-line"> <!--縦線-->
+                                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                                <!--説明-->
+                                                <p><span class="description-color">説明: </span>
+                                                    ブロックのタグ。molangで指定する。<a
+                                                        href="https://learn.microsoft.com/en-us/minecraft/creator/reference/content/blockreference/examples/vanillablocktags?view=minecraft-bedrock-stable"
+                                                        class="link-text">バニラブロックのタグ一覧</a><br>(例: query.any_tag('stone',
+                                                    'wood')、query.all_tag('stone',
+                                                    'minecraft:iron_tier_destructible'))
+                                                </p>
+
+                                                <!--型-->
+                                                <p><span class="type-color">型: </span>
+                                                    string
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </details>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </details>
+
+                <!--例-->
+                <p><span class="example-color">例: </span></p>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('example-code', 'example-code-button-text')">
+                    <a id="example-code-button-text">Copy</a>
+                </button>
+                <pre><code id="example-code">"minecraft:entity_placer": {
+    "entity": "minecraft:pig",
+    "dispense_on": [
+        {
+            "tags": "query.any_tag('dirt')"
+        }
+    ],
+    "use_on": [
+        {
+            "tags": "query.any_tag('dirt')"
+        }
+    ]
+}</code></pre>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--ヘッダー読み込み-->
+    <script>
+        fetch("../../../header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

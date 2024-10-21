@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>アイテム/Component/</title>
+    <title>アイテム/Component/glint</title>
     <link rel="shortcut icon" href="../../../icon.png">
     <link rel="stylesheet" href="../../../style.css">
 </head>
@@ -16,18 +16,18 @@
 
     <div style="margin: 30px;">
 
-        <h2>要素名 - 日本語名</h2>
+        <h2>glint - 輝き</h2>
         <div class="vertical-line"> <!--縦線-->
             <div class="description"> <!--要素をまとめて少し右へ-->
 
                 <!--説明-->
                 <p><span class="description-color">説明: </span>
-                    説明
+                    trueで、アイテムにエンチャントされたような輝きをつける。
                 </p>
 
                 <!--型-->
                 <p><span class="type-color">型: </span>
-                    型
+                    boolean | object
                 </p>
 
                 <!--プロパティ説明-->
@@ -36,18 +36,13 @@
                     <div class="description"> <!--要素をまとめて少し右へ-->
 
                         <!--プロパティ-->
-                        <h4>プロパティ名</h4>
+                        <h4>value</h4>
                         <div class="vertical-line"> <!--縦線-->
                             <div class="description"> <!--要素をまとめて少し右へ-->
 
-                                <!--説明-->
-                                <p><span class="description-color">説明: </span>
-                                    説明
-                                </p>
-
                                 <!--型-->
                                 <p><span class="type-color">型: </span>
-                                    型
+                                    boolean
                                 </p>
 
                             </div>
@@ -63,7 +58,15 @@
                 <button onclick="copyButton('example-code', 'example-code-button-text')">
                     <a id="example-code-button-text">Copy</a>
                 </button>
-                <pre><code id="example-code">コード</code></pre>
+                <pre><code id="example-code">"minecraft:glint": true</code></pre>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('example-code-object', 'example-code-button-text-object')">
+                    <a id="example-code-button-text-object">Copy</a>
+                </button>
+                <pre><code id="example-code-object">"minecraft:glint": {
+    "value": true
+}</code></pre>
 
             </div>
         </div>

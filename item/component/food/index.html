@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>アイテム/Component/food</title>
+    <link rel="shortcut icon" href="../../../icon.png">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+
+    <script src="../../../index.js"></script>
+
+    <div id="header"></div>
+
+    <div style="margin: 30px;">
+
+        <h2>food - 食料</h2>
+        <div class="vertical-line"> <!--縦線-->
+            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                <!--説明-->
+                <p><span class="description-color">説明: </span>
+                    アイテムを食べられるようにする。use_modifiersコンポーネントが必要。
+                </p>
+
+                <!--型-->
+                <p><span class="type-color">型: </span>
+                    object
+                </p>
+
+                <!--プロパティ説明-->
+                <details>
+                    <summary class="property-color">プロパティ</summary>
+                    <div class="description"> <!--要素をまとめて少し右へ-->
+
+                        <!--プロパティ-->
+                        <h4>can_always_eat</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    trueで空腹値が無くとも食べられるようになる。デフォルトではfalse。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    boolean
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!--プロパティ-->
+                        <h4>nutrition</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    満腹度がどれだけ回復するか。デフォルトでは0。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    integer
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!--プロパティ-->
+                        <h4>saturation_modifier</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    隠し満腹度がどれほど回復するか。デフォルトでは0.6。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    number
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!--プロパティ-->
+                        <h4>using_converts_to</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--説明-->
+                                <p><span class="description-color">説明: </span>
+                                    食べた時、アイテムがここで指定したアイテムに置き換わる。
+                                </p>
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    string
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </details>
+
+                <!--例-->
+                <p><span class="example-color">例: </span></p>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('example-code', 'example-code-button-text')">
+                    <a id="example-code-button-text">Copy</a>
+                </button>
+                <pre><code id="example-code">"minecraft:food": {
+    "can_always_eat": true,
+    "nutrition": 10,
+    "saturation_modifier": 1.5,
+    "using_converts_to": "minecraft:stick"
+}</code></pre>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--ヘッダー読み込み-->
+    <script>
+        fetch("../../../header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

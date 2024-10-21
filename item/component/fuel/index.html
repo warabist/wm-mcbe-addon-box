@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>アイテム/Component/</title>
+    <title>アイテム/Component/fuel</title>
     <link rel="shortcut icon" href="../../../icon.png">
     <link rel="stylesheet" href="../../../style.css">
 </head>
@@ -16,18 +16,18 @@
 
     <div style="margin: 30px;">
 
-        <h2>要素名 - 日本語名</h2>
+        <h2>fuel - 燃料</h2>
         <div class="vertical-line"> <!--縦線-->
             <div class="description"> <!--要素をまとめて少し右へ-->
 
                 <!--説明-->
                 <p><span class="description-color">説明: </span>
-                    説明
+                    アイテムを、かまどなどで燃料として使えるようにする。
                 </p>
 
                 <!--型-->
                 <p><span class="type-color">型: </span>
-                    型
+                    number | object
                 </p>
 
                 <!--プロパティ説明-->
@@ -36,18 +36,18 @@
                     <div class="description"> <!--要素をまとめて少し右へ-->
 
                         <!--プロパティ-->
-                        <h4>プロパティ名</h4>
+                        <h4>duration</h4>
                         <div class="vertical-line"> <!--縦線-->
                             <div class="description"> <!--要素をまとめて少し右へ-->
 
                                 <!--説明-->
                                 <p><span class="description-color">説明: </span>
-                                    説明
+                                    秒単位の燃焼時間。
                                 </p>
 
                                 <!--型-->
                                 <p><span class="type-color">型: </span>
-                                    型
+                                    number
                                 </p>
 
                             </div>
@@ -60,10 +60,18 @@
                 <p><span class="example-color">例: </span></p>
 
                 <!--コードブロック-->
-                <button onclick="copyButton('example-code', 'example-code-button-text')">
-                    <a id="example-code-button-text">Copy</a>
+                <button onclick="copyButton('example-code-number', 'example-code-button-text-number')">
+                    <a id="example-code-button-text-number">Copy</a>
                 </button>
-                <pre><code id="example-code">コード</code></pre>
+                <pre><code id="example-code-number">"minecraft:fuel": 10</code></pre>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('example-code-object', 'example-code-button-text-object')">
+                    <a id="example-code-button-text-object">Copy</a>
+                </button>
+                <pre><code id="example-code-object">"minecraft:fuel": {
+    "duration": 10
+}</code></pre>
 
             </div>
         </div>
