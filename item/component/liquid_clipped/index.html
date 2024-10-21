@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>アイテム/Component/liquid_clipped</title>
+    <link rel="shortcut icon" href="../../../icon.png">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+
+    <script src="../../../index.js"></script>
+
+    <div id="header"></div>
+
+    <div style="margin: 30px;">
+
+        <h2>liquid_clipped - 水への判定</h2>
+        <div class="vertical-line"> <!--縦線-->
+            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                <!--説明-->
+                <p><span class="description-color">説明: </span>
+                    trueにすると、液体へ向かって使用したときScriptAPIのPlayerInteractWithBlockBeforeEventが発火する。他にも効果はあるかもしれないが、詳しいことは不明。
+                </p>
+
+                <!--型-->
+                <p><span class="type-color">型: </span>
+                    boolean | object
+                </p>
+
+                <!--プロパティ説明-->
+                <details>
+                    <summary class="property-color">プロパティ</summary>
+                    <div class="description"> <!--要素をまとめて少し右へ-->
+
+                        <!--プロパティ-->
+                        <h4>value</h4>
+                        <div class="vertical-line"> <!--縦線-->
+                            <div class="description"> <!--要素をまとめて少し右へ-->
+
+                                <!--型-->
+                                <p><span class="type-color">型: </span>
+                                    boolean
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </details>
+
+                <!--例-->
+                <p><span class="example-color">例: </span></p>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('example-code', 'example-code-button-text')">
+                    <a id="example-code-button-text">Copy</a>
+                </button>
+                <pre><code id="example-code">"minecraft:liquid_clipped": true</code></pre>
+
+                <!--コードブロック-->
+                <button onclick="copyButton('example-code-object', 'example-code-button-text-object')">
+                    <a id="example-code-button-text-object">Copy</a>
+                </button>
+                <pre><code id="example-code-object">"minecraft:liquid_clipped": {
+    "value": true
+}</code></pre>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--ヘッダー読み込み-->
+    <script>
+        fetch("../../../header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+    </script>
+
+</body>
+
+</html>
