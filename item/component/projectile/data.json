@@ -1,4 +1,5 @@
 {
+    "$schema": "https://warabist.github.io/wm-mcbe-addon-box/dataTemplate.json",
     "name": "projectile - 発射体",
     "description": "アイテムを矢のように発射できるようにする。",
     "type": "object",
