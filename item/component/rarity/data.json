@@ -1,0 +1,22 @@
+{
+    "$schema": "https://warabist.github.io/wm-mcbe-addon-box/dataTemplate.json",
+    "name": "rarity - 希少度",
+    "description": "アイテムの希少度を決める。common、uncommon、rare、epicの内から選ぶことができる。",
+    "type": "string | object",
+    "properties": [
+        {
+            "name": "value",
+            "type": "string"
+        }
+    ],
+    "example": [
+        {
+            "name": "example-string",
+            "path": "./example-string.text"
+        },
+        {
+            "name": "example-object",
+            "path": "./example-object.text"
+        }
+    ]
+}
