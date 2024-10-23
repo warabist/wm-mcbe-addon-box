@@ -1,0 +1,4 @@
+"minecraft:projectile": {
+    "minimum_critical_power": 2,
+    "projectile_entity": "minecraft:arrow"
+}
