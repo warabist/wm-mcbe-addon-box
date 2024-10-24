@@ -1,0 +1,8 @@
+"minecraft:storage_item": {
+    "allow_nested_storage_items": true,
+    "allowed_items": [ "minecraft:iron_ingot", "minecraft:gold_ingot" ],
+    "banned_items": [ "minecraft:diamond" ],
+    "max_slots": 32,
+    "max_weight_limit": 32,
+    "weight_in_storage_item": 0
+}
