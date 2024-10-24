@@ -1,0 +1,19 @@
+{
+    "$schema": "https://warabist.github.io/wm-mcbe-addon-box/dataTemplate.json",
+    "name": "tags - タグ",
+    "description": "アイテムのタグ。",
+    "type": "object",
+    "properties": [
+        {
+            "name": "tags",
+            "description": "タグのリスト。",
+            "type": "string[]"
+        }
+    ],
+    "example": [
+        {
+            "name": "example",
+            "path": "./example.text"
+        }
+    ]
+}
