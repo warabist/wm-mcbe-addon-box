@@ -1,0 +1,22 @@
+{
+    "$schema": "https://warabist.github.io/wm-mcbe-addon-box/dataTemplate.json",
+    "name": "should_despawn - デスポーン",
+    "description": "アイテムは時間が経って自然にデスポーンするか。",
+    "type": "boolean | object",
+    "properties": [
+        {
+            "name": "value",
+            "type": "boolean"
+        }
+    ],
+    "example": [
+        {
+            "name": "example-boolean",
+            "path": "./example-boolean.text"
+        },
+        {
+            "name": "example-object",
+            "path": "./example-object.text"
+        }
+    ]
+}
