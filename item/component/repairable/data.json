@@ -1,0 +1,31 @@
+{
+    "$schema": "https://warabist.github.io/wm-mcbe-addon-box/dataTemplate.json",
+    "name": "repairable - 修理",
+    "description": "修理素材を設定する。",
+    "type": "object",
+    "properties": [
+        {
+            "name": "repair_items",
+            "description": "修理素材のリスト。",
+            "type": "object[]",
+            "properties": [
+                {
+                    "name": "items",
+                    "description": "修理に使えるアイテムのIDのリスト。",
+                    "type": "string[]"
+                },
+                {
+                    "name": "repair_amount",
+                    "description": "耐久値をどれだけ回復するか。stringでmolang、numberで直接数値での指定となっている。",
+                    "type": "string | number"
+                }
+            ]
+        }
+    ],
+    "example": [
+        {
+            "name": "example",
+            "path": "./example.text"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "$schema": "https://warabist.github.io/wm-mcbe-addon-box/dataTemplate.json",
+    "name": "record - レコード",
+    "description": "アイテムをレコードにする。",
+    "type": "object",
+    "properties": [
+        {
+            "name": "comparator_signal",
+            "description": "使用するコンパレータの信号強度を1～13で指定する。",
+            "type": "integer"
+        },
+        {
+            "name": "duration",
+            "description": "サウンドの再生時間。",
+            "type": "number"
+        },
+        {
+            "name": "sound_event",
+            "description": "再生するサウンドのID。",
+            "type": "string"
+        }
+    ],
+    "example": [
+        {
+            "name": "example",
+            "path": "./example.text"
+        }
+    ]
+}

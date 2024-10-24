@@ -81,7 +81,7 @@ function createDescription(data, isProperty = false) {
         const properties = document.createElement('details');
         const propertiesColor = document.createElement('summary');
         propertiesColor.className = 'property-color';
-        propertiesColor.textContent = 'プロパティ';
+        propertiesColor.textContent = data.type.includes('object[]') ? 'アイテムプロパティ' : 'プロパティ';
         properties.appendChild(propertiesColor);
 
         //これで要素を少し右にずらす

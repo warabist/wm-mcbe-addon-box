@@ -1,0 +1,5 @@
+"minecraft:record": {
+    "comparator_signal": 10,
+    "duration": 60,
+    "sound_event": "record.otherside"
+}

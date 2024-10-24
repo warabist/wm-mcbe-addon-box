@@ -1,0 +1,8 @@
+"minecraft:repairable": {
+    "repair_items": [
+        {
+            "items": [ "minecraft:stone" ],
+            "repair_amount": "math.random(10, 60)"
+        }
+    ]
+}
